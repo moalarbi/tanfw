@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "WOSOL Concierge | Strategic Tech-Enabled Operating Partnership",
+  title: "وُصُول كونسيرج | الشراكة التشغيلية التقنية الاستراتيجية",
   description:
-    "Arabic RTL executive strategy document for ALTANFEETHI and WOSOL Concierge.",
+    "وثيقة استراتيجية عربية للشراكة التشغيلية التقنية بين التنفيذي ووُصُول كونسيرج.",
   icons: {
     icon: "/favicon.svg",
     shortcut: "/favicon.svg",
