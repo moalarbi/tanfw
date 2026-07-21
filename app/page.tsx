@@ -37,6 +37,7 @@ type DocumentData = {
   titleBlocks: HeadingBlock[];
   sections: Section[];
   stats: {
+    blocks: number;
     sections: number;
     tables: number;
     textItems: number;
