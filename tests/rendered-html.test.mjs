@@ -97,6 +97,9 @@ test("يطبق نطاقات الرصيد التشغيلي المعتمدة", () 
 test("يستخدم سطح الوثيقة النهائي بدل معاينة البداية", () => {
   assert.match(layout, /<html lang="ar" dir="rtl">/);
   assert.match(layout, /وُصُول كونسيرج/);
+  assert.match(layout, /force-scroll-top/);
+  assert.match(layout, /scrollRestoration/);
+  assert.match(layout, /window\.scrollTo\(0, 0\)/);
   assert.match(page, /className="pattern-bg"/);
   assert.match(page, /className="hero-lockup"/);
   assert.match(page, /className="hero-rule"/);

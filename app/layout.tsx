@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Script from "next/script";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -18,7 +19,26 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ar" dir="rtl">
-      <body>{children}</body>
+      <body>
+        <Script id="force-scroll-top" strategy="beforeInteractive">
+          {`
+            try {
+              if ("scrollRestoration" in window.history) {
+                window.history.scrollRestoration = "manual";
+              }
+
+              var scrollToTop = function () {
+                window.scrollTo(0, 0);
+              };
+
+              scrollToTop();
+              window.addEventListener("pageshow", scrollToTop);
+              window.addEventListener("load", scrollToTop);
+            } catch (error) {}
+          `}
+        </Script>
+        {children}
+      </body>
     </html>
   );
 }
