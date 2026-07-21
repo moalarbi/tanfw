@@ -488,6 +488,15 @@ export default function Home() {
               </div>
             </aside>
           </div>
+
+          <figure className="closing-banner">
+            <Image
+              src="/assets/media/executive-closing-banner.png"
+              alt="تجربة استقبال تنفيذية فاخرة"
+              width={1916}
+              height={821}
+            />
+          </figure>
         </main>
 
         <footer className="site-footer">

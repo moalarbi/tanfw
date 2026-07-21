@@ -296,16 +296,25 @@ a {
   line-height: 1.8;
 }
 
-.hero-banner {
+.hero-banner,
+.closing-banner {
   position: relative;
   overflow: hidden;
   width: min(1180px, 100%);
-  margin: 0 auto 86px;
   border: 1px solid rgba(4, 16, 38, 0.08);
   background: #fff;
 }
 
-.hero-banner img {
+.hero-banner {
+  margin: 0 auto 86px;
+}
+
+.closing-banner {
+  margin: 16px auto 0;
+}
+
+.hero-banner img,
+.closing-banner img {
   display: block;
   width: 100%;
   height: auto;

@@ -106,6 +106,8 @@ test("يستخدم سطح الوثيقة النهائي بدل معاينة ال
   assert.match(page, /hero-altanfeethi-logo/);
   assert.match(page, /className="hero-banner"/);
   assert.match(page, /executive-hero-banner\.png/);
+  assert.match(page, /className="closing-banner"/);
+  assert.match(page, /executive-closing-banner\.png/);
   assert.match(page, /className="exec-summary"/);
   assert.match(page, /className="document-shell"/);
   assert.match(page, /className="document-flow"/);
